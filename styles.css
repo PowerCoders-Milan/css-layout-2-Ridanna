@@ -1,17 +1,64 @@
 /* USE CSS LAYOUTS HERE */
 
-.header {
-
+.header{
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .main {
-
+background-color:darkgray;
+color: white;
+float: left;
+width: 70%;
+box-sizing: border-box;
 }
+
 
 .footer-grid {
 
 }
 
-.footer-flex {
-
+.footer-flex{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
+.container-grid{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.main-block-grid{
+    float: left;
+    width: 50%;
+}
+
+.block-grid{
+   float: left;
+   width: 50%;
+}
+
+.footer-grid{
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+@media(max-width:600px){
+    #main{
+    width: 100%;
+    float: none;
+
+    }
