@@ -1,64 +1,35 @@
 /* USE CSS LAYOUTS HERE */
-
+.flex{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main{
+    background-color: darkgreen;
+    flex: 80vh;
+}
 .header{
-    background-color: black;
-    color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    background-color: seagreen;
+    height: 10vh;
+}
+.footer{
+    background-color: darkgray;
+    height: 10vh;
     text-align: center;
 }
 
-.main {
-background-color:darkgray;
-color: white;
-float: left;
-width: 70%;
-box-sizing: border-box;
-}
-
-
-.footer-grid {
-
-}
-
-.footer-flex{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-.container-grid{
+.grid{
+    
     display: grid;
-    grid-template-columns: auto;
-    padding: 10px;
+    grid-template-rows: 10% auto 10%;
+    min-height: 100vh;
 }
-
-.main-block-grid{
-    float: left;
-    width: 50%;
-}
-
-.block-grid{
-   float: left;
-   width: 50%;
-}
-
 .footer-grid{
     background-color: black;
     color: white;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    bottom: 0;
+   
 }
-@media(max-width:600px){
-    #main{
-    width: 100%;
-    float: none;
-
-    }
+.header-grid{
+    background-color: yellow;
+    color: black;
+}
